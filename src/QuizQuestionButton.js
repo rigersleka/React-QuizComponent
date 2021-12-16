@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
 
 class QuizQuestionButton extends Component {
-  handleSubmit() {
-    console.log('Test');
+  handleClick() {
+    this.props.clickHandler(this.props.button_text);
   }
-
   render() {
     return (
-      <div>
-        <li>
-          <button onClick={this.handleSubmit}>{this.props.button_text}</button>
-        </li>
-      </div>
+      <li>
+        <button onClick={this.handleClick.bind(this)}>
+          {this.props.button_text}
+        </button>
+      </li>
     );
   }
 }
