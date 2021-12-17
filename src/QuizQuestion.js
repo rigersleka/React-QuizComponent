@@ -25,7 +25,7 @@ class QuizQuestion extends Component {
         1. Ternary Operator
         2. Using logigal &&
 
-        (refenrece: https://www.digitalocean.com/community/tutorials/7-ways-to-implement-conditional-rendering-in-react-applications)
+        (reference: https://www.digitalocean.com/community/tutorials/7-ways-to-implement-conditional-rendering-in-react-applications)
   */
   render() {
     return (
