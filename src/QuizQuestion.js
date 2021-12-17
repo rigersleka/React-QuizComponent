@@ -28,20 +28,19 @@ class QuizQuestion extends Component {
         (refenrece: https://www.digitalocean.com/community/tutorials/7-ways-to-implement-conditional-rendering-in-react-applications)
   */
   render() {
-    //Ternary Operator
-    const displayIncorrectAnswer = this.state.incorrectAnswer ? (<p className='error'>Sorry, that's not right.</p>): null;
-   
     return (
       <main>
         <section>
           <p>{this.props.quiz_question.instruction_text}</p>
+
+          {/* Ternary Operator */}
           <div>
-            {displayIncorrectAnswer}
+          {this.state.incorrectAnswer ? (<p className='error'>Sorry, that's not right.</p>): null}
           </div>
          {/* Conditional Rendering */}
-          <div>
+          {/* <div>
             {this.state.incorrectAnswer && (<p className='error'>TESTTEST</p>)}
-          </div> 
+          </div>  */}
         </section>
         <section className='buttons'>
           <ul>
